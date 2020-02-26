@@ -1,6 +1,6 @@
 "use strict";
 
-const HOMETOWN = "Brooklyn Park"
+const HOMETOWN = "Brooklyn Park";
 
 // 1. isHometown
 
@@ -22,7 +22,7 @@ function getFullName(fname, lname) {
 
 function calculateTotal(basePrice, state, tax = 0.05) {
   const subTotal = (basePrice * (1 + tax));
-  let fee = 0
+  let fee = 0;
 
   if (state === 'CA') {
     fee = (0.03 * subTotal);
