@@ -14,13 +14,26 @@ function printIndices(items) {
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
+  // for (init; condt; exp) allows us to do a step as step is not an option in js
   for (let i=0; i<items.length;i+=2) {
-    console.log(i);
+    console.log(items[i]);
   }
 }
 
+function compare(a, b) {
+  // fixing Array.prototype.sort
+  return a - b;
+}
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+  let sortedNums = [];
+  // add comment here about fix
+  sortedNums = nums.sort(compare);
+  console.log(sortedNums)
+  for (const number in sortedNums.slice(0, n)) {
+    //print out n smallest items
+    console.log(sortedNums[number])
+  }
+
 }
