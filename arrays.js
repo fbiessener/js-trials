@@ -28,7 +28,8 @@ function compare(a, b) {
 // 3. smallestNItems
 function smallestNItems(items, n) {
   let sortedNums = [];
-  // add comment here about fix
+  // calling compare so it sorts the whole object and not by the first number 
+  // (eg .sort() => input: [15, 3009, 1, 60, 20] output: [1, 15, 20, 3009, 60])
   sortedNums = nums.sort(compare);
   console.log(sortedNums)
   for (const number in sortedNums.slice(0, n)) {
